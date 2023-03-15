@@ -1,26 +1,38 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="apps">
+    <router-link to="/counter"> <h1>sjhvskjf</h1> </router-link>
+    <router-view />
+    <CounterPage />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+// import HelloWorld from './components/HelloWorld.vue'
+import CounterPage from './components/CounterPage.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    CounterPage,
   }
 }
 </script>
 
 <style>
+body {
+  background-color: #013d3bff;
+  /* background-color: #012928ff; */
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  background-color: #012928ff;
+  /* margin-top: 60px; */
+
+    width: 70%;
+    height: 18em;
+    padding: 22px 0 5px 0;
 }
 </style>
