@@ -1,6 +1,6 @@
 <template>
   <div id="apps">
-    <router-link to="/counter"> <h1>sjhvskjf</h1> </router-link>
+    <!-- <router-link to="/counter"> <h1>sjhvskjf</h1> </router-link> -->
     <router-view />
     <CounterPage />
   </div>
@@ -18,6 +18,12 @@ export default {
 </script>
 
 <style>
+html {
+  height: 100vh;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
 body {
   background-color: #013d3bff;
   /* background-color: #012928ff; */
@@ -34,5 +40,8 @@ body {
     width: 70%;
     height: 18em;
     padding: 22px 0 5px 0;
+}
+h1, h3 {
+  color: white;
 }
 </style>
