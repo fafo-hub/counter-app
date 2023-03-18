@@ -1,9 +1,9 @@
 <template>
-  <div id="apps">
+  
     <!-- <router-link to="/counter"> <h1>sjhvskjf</h1> </router-link> -->
     <router-view />
     <CounterPage />
-  </div>
+  
 </template>
 
 <script>
@@ -22,7 +22,7 @@ html {
   height: 100vh;
     display: grid;
     align-content: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 body {
   background-color: #013d3bff;
@@ -37,11 +37,21 @@ body {
   background-color: #012928ff;
   /* margin-top: 60px; */
 
-    width: 70%;
+    width: 53%;
     height: 18em;
     padding: 22px 0 5px 0;
+
+    position: relative;
+    left: 23%;
+    /* width: 125%; */
 }
 h1, h3 {
   color: white;
+}
+@media screen and (max-width: 768px) {
+  #app {
+    width: 100%;
+    left: 0;
+  }
 }
 </style>
